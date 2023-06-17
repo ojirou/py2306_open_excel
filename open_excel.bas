@@ -6,4 +6,7 @@ End Sub
 Sub open_excel(ByVal FilePath As String)
     Dim wb As Workbook
     Set wb = Workbooks.Open(FilePath)
+    Application.WindowState = xlNormal
+    Application.Visible = True
+    AppActivate Application.Caption
 End Sub
